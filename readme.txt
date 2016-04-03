@@ -1,6 +1,11 @@
 Git is a distributed version control system.
 
 Git is free software distributed under GPL.
+
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+
+Git 跟踪修改　而不跟踪文件
+
 ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
 １．初始化一个Git仓库　使用git init命令
 ２．添加文件到仓库　分两步：
