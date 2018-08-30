@@ -1,0 +1,14 @@
+---
+- action: app_start
+  apps:
+   - app: { '$ref': 'app.yml#/proid1.app1' }
+     count: 5000
+
+#- action: sleep
+#  interval: 5
+
+- action: app_start
+  apps:
+   - app: { '$ref': 'app.yml#/proid2.app2' }
+     count: 9000
+

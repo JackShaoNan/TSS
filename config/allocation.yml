@@ -1,0 +1,10 @@
+---
+alloc:sub/prod:
+   cpu: 20
+   memory: 5G
+   disk: 5G
+   #iops: 4000 
+   assignments:
+    - pattern: proid1.app1* 
+      priority: 1
+

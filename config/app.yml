@@ -1,0 +1,49 @@
+---
+proid1.app1:
+  manifest:
+    cpu: 100
+    memory: 1G
+    disk: 1G
+    #iops: 100
+    affinity: proid1
+    affinity_limits: {}
+    services: []
+    lease: 1d
+    services:
+    - name: 'bash'
+      restart: {interval: 60, limit: 5}
+      command: '/bin/bash'
+  lifetime:
+    min: 300
+    max: 600 
+
+proid2.app2:
+  manifest:
+    cpu: 100
+    memory: 1G
+    disk: 1G
+    #iops: 50
+    affinity: proid2
+    affinity_limits: {}
+    services:
+    - name: 'bash'
+      restart: {interval: 60, limit: 5}
+      command: '/bin/bash'
+  lifetime:
+    min: 0
+
+proid3.app3:
+  manifest:
+    cpu: 100
+    memory: 1G
+    disk: 1G
+    #iops: 100
+    affinity: proid3
+    affinity_limits: {}
+    services:
+    - name: 'bash'
+      restart: {interval: 60, limit: 5}
+      command: '/bin/bash'
+  lifetime:
+    min: 300
+

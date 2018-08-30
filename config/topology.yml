@@ -1,0 +1,12 @@
+building:xx:
+    rack:xx1:
+       - number: 1000
+         type: { "$ref": "hosts.yml#/small_host" }
+         valid_until: 9481436843.482975
+       - number: 400
+         type: { "$ref": "hosts.yml#/large_host" }
+         valid_until: 9481436843.482975
+    rack:xx2:
+       - number: 400
+         type: { "$ref": "hosts.yml#/huge_host" }
+         valid_until: 9481436843.482975

@@ -1,0 +1,44 @@
+---
+- action: allocation_configure
+  allocation: { '$ref': 'allocation.yml#/alloc:sub/prod' }
+
+- action: host_up
+  hosts:
+   #- large_host-0001:0400
+   - small_host-0001:1000
+   #- huge_host-0001:0400
+
+- action: allocation_configure
+  allocation: { '$ref': 'allocation.yml#/alloc:sub/prod' }
+  delta:
+     cpu: 2000
+     assignments:
+      #- pattern: proid1.app1* 
+      #  priority: 1
+      - pattern: proid2.app2*
+        priority: 2
+
+#- action: app_start
+#  apps:
+#   - app: { '$ref': 'app.yml#/proid1.app1' }
+#     count: 30000
+#   - app: { '$ref': 'app.yml#/proid2.app2' }
+#     count: 10000
+#
+#- action: sleep
+#  interval: 3
+#
+#- action: app_start
+#  apps: 
+#   #- app: { “$ref”: “app.yml#/proid1.app1” } 
+#   # count: 0
+#   - app: { '$ref': 'app.yml#/proid2.app2'}
+#     count: 100
+#
+#
+#- action: host_down
+#  hosts:
+#   - large_host-0007
+#   - large_host-0008
+   #- small_host-0001:0050
+
