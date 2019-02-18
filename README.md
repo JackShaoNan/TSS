@@ -86,12 +86,3 @@ Simulation. Run:
 Please edit **monte_carlo_test.sh**, to customise your own test case.
      
 PS: we could make use of this script to wrap up 5 steps above and run them in one command, which can be much easier.
-
-
-
-
-Morgan Stanley Core Infrastructure Enterprise Computing Team
-Treadmill scheduler simulator
-1. Migrated treadmill to file-system backend
-2. Implemented tools to set test scenarios and get visualized result
-3. Implemented tool to launch Monte Carlo simulation on treadmill 
